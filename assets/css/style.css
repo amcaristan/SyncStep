@@ -1,0 +1,242 @@
+body
+{    
+    min-width: 1000px;
+	align-content:center;
+}
+
+html
+{
+   background: url(../imgs/bg-3.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+h2
+{
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    color: #ea4c4c;
+}
+
+input
+{
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+   
+    color: #1b1b1b;
+    
+    width: 300px;
+    height: 30px;
+    
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    
+    border-radius: 3px;
+    border-style: none;
+    
+    opacity: .6;
+}
+
+#slider-val
+{
+        
+    width: 100px;
+    height: 40px;
+    
+    margin-left: auto;
+    margin-right: auto;
+    
+    background-color: transparent;
+    text-align: center;
+}
+
+.slider-val
+{
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    
+    color: #1b1b1b;
+}
+
+#submit
+{
+    width: 140px;
+    height: 30px;
+    text-align: center;
+    
+    background-color: transparent;
+    
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    
+    opacity: .7;
+}
+
+#submit:hover
+{
+    opacity: .9;
+}
+
+#submit:active
+{
+    opacity: 1;
+}
+
+#submit
+{
+    font-size: 25px;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    text-decoration: none;
+    
+    color: white;
+    background-color: #ea4c4c;
+    
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    
+    
+    width: 140px;
+    height: 60px;
+    
+    border-style: none;
+    border-radius: 3px;
+}
+
+#artist
+{
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    
+    color: #1b1b1b;
+    background-color: transparent;
+    
+    width: 75%;
+    height: 50px;
+    
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#header
+{
+    font-size: 50px;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    
+    width: 75%;
+    height: 68px;
+    min-width: 700px;
+    
+    color: #ea4c4c;
+    background-color: transparent;
+    
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -8px;
+    
+}
+
+#line-div
+{
+    width: 50%;
+    height: 1px;
+    min-width: 650px;
+    
+    color: #1b1b1b;
+    border-top-style: none;
+    border-left-style: none;
+    border-right-style: none;
+    border-bottom-style: solid;
+    border-width: 2px;
+    
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+
+#by-livliness
+{
+    width: 75%;
+    height: 220px;
+    min-width: 700px;
+    
+    background-color: transparent;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -10px;
+}
+
+#activity-buttons
+{
+    width: 50%;
+    height: 100px;
+    
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -10px;
+    
+    font-family: 'Montserrat', serif;
+    font-size: 12x;
+    color: #1b1b1b;
+    
+    background-color: transparent;
+}
+
+#by-bpm
+{
+    width: 75%;
+    height: 220px;
+    min-width: 700px;
+	text-align: center;
+    
+    background-color: transparent;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -10px;
+}
+
+#slider-container
+{
+    width: 100%;
+    height: 50px;
+    
+    background-color: transparent;
+    
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#slider
+{
+    width: 300px;
+    height: 50px;
+    
+    background-color: transparent;
+    
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#by-weather
+{
+    width: 75%;
+    height: 50px;
+    min-width: 700px;
+    
+    background-color: transparent;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -10px;
+}

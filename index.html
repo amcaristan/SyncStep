@@ -1,0 +1,79 @@
+<html>
+<head>
+<link rel="stylesheet" href="assets/css/style.css">
+<link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+<title>SyncStep - Adaptive Music Playlist</title>
+</head>
+
+<body onload="slider()">
+<div id="header"> SyncStep </div>
+<div id="line-div"></div>
+<br>
+
+<!--<h2 style="margin-top: 5px;"> Playlist by Liveliness </h2>
+<div id="by-livliness">
+<form action="liveliness_playlist.php" method="POST">
+    <div id="activity-buttons">
+    <input type="radio" name="activity" value="low" style="height: 15px;">
+    Low Activity<br>
+    <input type="radio" name="activity" value="mild" style="height: 15px;">
+    Mild Activity</br>
+    <input type="radio" name="activity" value="high" style="height: 15px;">
+    High Activity</br>
+  </div>
+    <input type="text" name="artists-name" title="artist" style="color:#888;" 
+    value="Input Artist Name" onfocus="inputFocus(this)" onblur="inputBlur(this)" />
+    <br>
+    <input type="submit" value="Generate" name="submit" id="submit"/>
+  </form>
+</div> -->
+<br>
+
+<div id="line-div"></div>
+
+<br>
+<h2 style="margin-top: 5px;"> Playlist by BPM</h2><br>
+<div id="by-bpm">
+<div id="slider-val"><a class="slider-val"> ~ </a> </div>
+  <form action="bpm_playlist.php" method="POST">
+    <div id="slider">
+      <input onclick="slider()" name="bpm" id="myRange" type="range" min="60" max="360"/>
+    </div>
+    <input type="text" name="artist-name" title="artist" style="color:#888;" 
+    value="Input Artist Name" onfocus="inputFocus(this)" onblur="inputBlur(this)" />
+    <br>
+    <input type="submit" value="Generate" name="submit" id="submit"/>
+  </form>
+</div>
+<br>
+
+<div id="line-div"></div>
+
+<br>
+<h2 style="margin-top: 5px;"> Playlist by weather in your area </h2>
+<div id="by-weather">
+  <div id="artist">
+    <form action="weather_playlist.php" method="POST">
+      <input type="submit" value="Generate" name="submit" id="submit">
+    </form>
+  </div>
+</div>
+
+<script>
+function inputFocus(i){
+    if(i.value==i.defaultValue){ i.value=""; i.style.color="#000"; }
+}
+function inputBlur(i){
+    if(i.value==""){ i.value=i.defaultValue; i.style.color="#888"; }
+}
+</script> 
+<script>
+        function slider()
+        {
+            var text = document.getElementsByClassName("slider-val");
+            text[0].innerText = document.getElementById("myRange").value + ' BPM';
+//            window.alert("ALERT: " + document.getElementById("myRange").value);
+        }
+    </script>
+</body>
+</html>
